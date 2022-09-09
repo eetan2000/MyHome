@@ -6,22 +6,35 @@ export default function Home() {
     const hours = date.getHours()
     
     const [timeOfDay, setTimeofDay] = React.useState("")
+    const [clockState, setClockState] = React.useState();
+
+    const styles = {
+        backgroundImage: `url(../images/${timeOfDay}.jpg)`
+    }
 
     React.useEffect( () => {
+        setInterval( () => {
+            const clock = new Date()
+            setClockState(clock.toLocaleTimeString())
+        }, 100 )
+
+
         if(hours >= 4 && hours < 12) {
-            setTimeofDay("Good morning")
+            setTimeofDay("morning")
         } else if(hours >= 12 && hours < 17) {
-            setTimeofDay("Good afternoon")
+            setTimeofDay("afternoon")
         } else if(hours >= 17 && hours < 20) {
-            setTimeofDay("Good evening")
+            setTimeofDay("evening")
         } else {
-            setTimeofDay("Good night")
+            setTimeofDay("night")
         }
-    } )
+    }, [] )
+
 
     return (
-        <div>
-            <h2>{timeOfDay}</h2>
+        <div className={`home-container-${timeOfDay}`} >
+            <h1>{clockState}</h1>
+            <h2>Good {timeOfDay}</h2>
         </div>
     )
 }

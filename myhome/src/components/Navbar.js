@@ -7,18 +7,18 @@ const Navbar = () => {
     <>
         <Nav>
             <NavLink to="/">
-                <h1>Logo</h1>
+                <h1>MyHome</h1>
             </NavLink>    
             <NavMenu>
-                <NavLink to="/notes" activeStyle>
+                <NavLink to="/Notes" activeStyle>
                     Notes
                 </NavLink>
-                <NavLink to="/weather" activeStyle>
+                <NavLink to="/Weather" activeStyle>
                     Weather
                 </NavLink>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink to='/signOut'>Sign Out</NavBtnLink>
+                <NavBtnLink to='/SignOut'>Sign Out</NavBtnLink>
             </NavBtn>
         </Nav> 
     </>
