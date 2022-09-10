@@ -1,6 +1,6 @@
 import React from 'react'
 import {Nav, NavLink, NavMenu, NavBtn, NavBtnLink} from './NavbarElements'
-import {AiFillHome} from "react-icons/ai"
+
 
 const Navbar = () => {
   return (
@@ -15,6 +15,9 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink to="/Weather" activeStyle>
                     Weather
+                </NavLink>
+                <NavLink to="/CalendarComponent" activeStyle>
+                    Calendar
                 </NavLink>
             </NavMenu>
             <NavBtn>

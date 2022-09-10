@@ -404,3 +404,63 @@ textarea {
 .weather h1 {
   font-size: 6rem;
 }
+
+.calendar {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-events {
+  width:150px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  text-align: center;
+}
+
+.calbtn {
+  border-radius: 4px;
+  background: rgba(0, 136, 204, 0.612);
+  padding: 10px 22px;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  /* Second Nav */
+  margin-left: 24px;
+  font-family: 'Karla',sans-serif;
+}
+
+.calbtn:hover {
+  transition: all 0.2s ease-in-out;
+    background: #08c;
+    color: #fff;
+}
+
+.calendar input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  width: 350px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background: rgba(255,255,255, 0.1);
+  color: black;
+  font-family: 'Karla', sans-serif;
+}
+
+.calendar input::placeholder {
+  color: grey;
+}
+
+.calendar-component {
+  width: 950px;
+  height: auto
+}

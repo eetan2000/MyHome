@@ -12,6 +12,7 @@ import Home from "./pages/Home"
 import Notes from "./pages/Notes"
 import SignOut from "./components/SignOut"
 import Weather from "./pages/Weather"
+import CalendarComponent from './pages/CalendarComponent';
 
 firebase.initializeApp({
   apiKey: "AIzaSyDjuVEnX0O7gmzOqNvpZAJu-rlhxuK5_gU",
@@ -40,6 +41,7 @@ function App() {
               <Route path="/" exact element={<Home auth={auth}/>} />
               <Route path="/Notes" element={<Notes/>} />
               <Route path="/Weather" element={<Weather/>} />
+              <Route path="/CalendarComponent" element={<CalendarComponent/>} />
               <Route path="/SignOut" element={<SignOut auth={auth}/>} />
             </Routes>
         </Router> 
