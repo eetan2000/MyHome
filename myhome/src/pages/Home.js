@@ -1,16 +1,13 @@
 import React from 'react'
 import "../App.css"
 
-export default function Home() {
+export default function Home(props) {
     const date = new Date()
     const hours = date.getHours()
     
     const [timeOfDay, setTimeofDay] = React.useState("")
     const [clockState, setClockState] = React.useState();
 
-    const styles = {
-        backgroundImage: `url(../images/${timeOfDay}.jpg)`
-    }
 
     React.useEffect( () => {
         setInterval( () => {
@@ -30,11 +27,14 @@ export default function Home() {
         }
     }, [] )
 
+    //const name = props.name.split(" ")[0]
+    const {displayName} = props.auth.currentUser
+    const name = displayName.split(" ")[0]
 
     return (
         <div className={`home-container-${timeOfDay}`} >
             <h1>{clockState}</h1>
-            <h2>Good {timeOfDay}</h2>
+            <h2>Good {timeOfDay}, {name}</h2>
         </div>
     )
 }

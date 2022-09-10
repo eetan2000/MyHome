@@ -191,3 +191,131 @@ body {
   align-items: center;
   height: 500px;
 }
+
+.note-container {
+  display: flex;
+
+}
+
+.notes-sidebar {
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+}
+
+.notes-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.notes-sidebar-header h1 {
+  margin: 0;
+}
+
+.notes-sidebar-header button {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  color: #08c;
+}
+
+.notes-sidebar-header button:hover {
+  color: #04c;
+}
+ 
+.notes-sidebar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+
+.notes-sidebar-note {
+  padding: 25px;
+  cursor: pointer;
+}
+
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes-sidebar-note button {
+  color: crimson;
+  font-family: 'Karla', sans-serif;
+}
+.notes-sidebar-note p {
+  margin: 10px 0;
+}
+.notes-sidebar-note small {
+  display: block;
+  color: #999;
+}
+
+.notes-sidebar-note:hover {
+  background: #ddd;
+}
+.notes-sidebar-note.active,
+.notes-sidebar-note.active small {
+  background: #08c;
+  color: white;
+}
+
+.notes-main {
+  width: 70%;
+  height: 100vh;
+}
+.notes-main-note-edit,
+.notes-main-note-preview {
+  height: 50vh;
+}
+
+.no-active-note {
+  width: 70%;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+  color: #999;
+}
+
+.notes-main-note-edit {
+  padding: 25px;
+}
+
+.notes-main-note-edit input,
+textarea {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  height: calc(50vh - 130px);
+  padding: 10px;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+.notes-main-note-edit input {
+  height: 50px;
+  font-size: 2rem;
+}
+
+.notes-main-note-preview {
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.preview-title {
+  padding: 25px 25px 0 25px;
+  margin: 0;
+}
+
+.markdown-preview {
+  padding: 0 25px 25px 25px;
+  font-size: 1rem;
+  line-height: 2rem;
+}
