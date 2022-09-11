@@ -9,6 +9,13 @@
 - Calendar feature that allows users to create events and insert them into the calendar in real time
 - Implements multiple APIs including OpenWeatherApp and Google Firebase
 
+## Screenshots
+<img src="https://github.com/eetan2000/MyHome/blob/main/img/Screenshot%20(345).png"/>
+<img src="https://github.com/eetan2000/MyHome/blob/main/img/Screenshot%20(346).png"/>
+<img src="https://github.com/eetan2000/MyHome/blob/main/img/Screenshot%20(347).png"/>
+<img src="https://github.com/eetan2000/MyHome/blob/main/img/Screenshot%20(348).png"/>
+
+
 ## App Tour
 ![alt-text](https://github.com/eetan2000/MyHome/blob/main/img/myhome.gif)
 
@@ -20,3 +27,4 @@
 
 ## Calendar
 ![alt-text](https://github.com/eetan2000/MyHome/blob/main/img/calendar.gif)
+
