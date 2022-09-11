@@ -3,6 +3,7 @@
 
 ## About
 - A personal project that followed an agile software development cycle
+- Designed the UI using Figma
 - Authenticates users using sign-in with Google
 - A fully functioning notes app that allows users to read and create new notes in real time
 - Weather feature that allows users to check accurate weather data from any city in the world
